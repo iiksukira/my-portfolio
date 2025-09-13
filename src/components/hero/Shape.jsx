@@ -5,14 +5,18 @@ const Shape = () => {
     <>
       <Sphere args={[1, 100, 200]} scale={2.4}>
         <MeshDistortMaterial
-          color="#DB8B9B"
+          color="rgb(0, 138, 212)"
           attach="material"
           distort={0.5}
           speed={2}
         />
       </Sphere>
+      {/* eslint-disable react/no-unknown-property */}
       <ambientLight intensity={2} />
+      {/* eslint-enable react/no-unknown-property */}
+      {/* eslint-disable react/no-unknown-property */}
       <directionalLight position={[1, 2, 3]} />
+      {/* eslint-enable react/no-unknown-property */}
     </>
   );
 };

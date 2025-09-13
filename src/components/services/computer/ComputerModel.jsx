@@ -3,6 +3,7 @@ import { useGLTF } from "@react-three/drei";
 export function ComputerModel(props) {
   const { nodes, materials } = useGLTF("/computerModel.glb");
   return (
+    /* eslint-disable react/no-unknown-property */
     <group {...props} dispose={null}>
       <group position={[0.121, 0.007, 0]}>
         <mesh
@@ -19,6 +20,7 @@ export function ComputerModel(props) {
         material={materials.MacBookPro}
       />
     </group>
+    /* eslint-enable react/no-unknown-property */
   );
 }
 

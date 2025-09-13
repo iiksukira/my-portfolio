@@ -4,6 +4,10 @@ import Speech from "./Speech";
 import { motion } from "motion/react";
 import Shape from "./Shape";
 import { Suspense } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const awardVariants = {
   initial: {
@@ -48,7 +52,7 @@ const Hero = () => {
         >
           Hey There,
           <br />
-          <span>I'm Robert!</span>
+          <span>I&apos;m Iik Sukira</span>
         </motion.h1>
         {/* AWARDS */}
         <motion.div
@@ -57,15 +61,11 @@ const Hero = () => {
           animate="animate"
           className="awards"
         >
-          <motion.h2 variants={awardVariants}>Top Rated Designer</motion.h2>
+          <motion.h2 variants={awardVariants}>Frontend Developer</motion.h2>
           <motion.p variants={awardVariants}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Experienced in building modern, responsive web applications using
+            React, JavaScript, and CSS.
           </motion.p>
-          <motion.div variants={awardVariants} className="awardList">
-            <motion.img variants={awardVariants} src="/award1.png" alt="" />
-            <motion.img variants={awardVariants} src="/award2.png" alt="" />
-            <motion.img variants={awardVariants} src="/award3.png" alt="" />
-          </motion.div>
         </motion.div>
         {/* SCROLL SVG */}
         <motion.a
@@ -113,14 +113,23 @@ const Hero = () => {
           animate="animate"
           className="follow"
         >
-          <motion.a variants={followVariants} href="/">
-            <img src="/instagram.png" alt="" />
+          <motion.a
+            variants={followVariants}
+            href="https://www.instagram.com/iiksukira13/?hl=en"
+          >
+            <FontAwesomeIcon icon={faInstagram} className="social-icon" />
           </motion.a>
-          <motion.a variants={followVariants} href="/">
-            <img src="/facebook.png" alt="" />
+          <motion.a
+            variants={followVariants}
+            href="https://web.facebook.com/iiksukira13?locale=id_ID"
+          >
+            <FontAwesomeIcon icon={faFacebook} className="social-icon" />
           </motion.a>
-          <motion.a variants={followVariants} href="/">
-            <img src="/youtube.png" alt="" />
+          <motion.a
+            variants={followVariants}
+            href="https://www.linkedin.com/in/iik-sukira/"
+          >
+            <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
           </motion.a>
           <motion.div variants={followVariants} className="followTextContainer">
             <div className="followText">FOLLOW ME</div>
@@ -128,19 +137,7 @@ const Hero = () => {
         </motion.div>
         {/* BUBBLE */}
         <Speech />
-        {/* CERTIFICATE */}
-        <motion.div
-          animate={{ opacity: [0, 1] }}
-          transition={{ duration: 1 }}
-          className="certificate"
-        >
-          <img src="/certificate.png" alt="" />
-          LMA CERTIFICED
-          <br />
-          PROFESSIONAL
-          <br />
-          UI DESIGNER
-        </motion.div>
+
         {/* CONTACT BUTTON */}
         <motion.a
           href="/#contact"
@@ -163,7 +160,7 @@ const Hero = () => {
             }}
           >
             <svg viewBox="0 0 200 200" width="150" height="150">
-              <circle cx="100" cy="100" r="90" fill="pink" />
+              <circle cx="100" cy="100" r="90" fill="rgb(0, 138, 212)" />
               <path
                 id="innerCirclePath"
                 fill="none"
@@ -203,7 +200,7 @@ const Hero = () => {
           </Suspense>
         </Canvas>
         <div className="hImg">
-          <img src="/hero.png" alt="" />
+          <img src="/me.png" alt="" />
         </div>
       </div>
     </div>

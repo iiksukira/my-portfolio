@@ -62,18 +62,22 @@ const Contact = () => {
           animate={isInView ? "animate" : "initial"}
         >
           <motion.h1 variants={listVariant} className="cTitle">
-            Let's keep in touch
+            Let&apos;s keep in touch
           </motion.h1>
           <motion.div variants={listVariant} className="formItem">
             <label>Name</label>
-            <input type="text" name="user_username" placeholder="John Doe" />
+            <input
+              type="text"
+              name="user_username"
+              placeholder="for example: (Iik Sukira)"
+            />
           </motion.div>
           <motion.div variants={listVariant} className="formItem">
             <label>Email</label>
             <input
               type="email"
               name="user_email"
-              placeholder="john@gmail.com"
+              placeholder="for example: (iik.sukira86@gmail.com)"
             />
           </motion.div>
           <motion.div variants={listVariant} className="formItem">
@@ -91,7 +95,9 @@ const Contact = () => {
           {error && <span>Something went wrong!</span>}
         </motion.form>
       </div>
-      <div className="cSection"><ContactSvg/></div>
+      <div className="cSection">
+        <ContactSvg />
+      </div>
     </div>
   );
 };
