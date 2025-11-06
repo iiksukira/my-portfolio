@@ -42,14 +42,14 @@ type TConfig = {
 export const config: TConfig = {
   html: {
     title: 'Iik Sukira | Portfolio',
-    logoname: 'Iik Sukira | Frontend Web Developer',
+    logoname: 'Iik Sukira | Frontend Engineer',
     fullName: 'Iik Sukira',
     email: 'iiksukira86@mail.com',
   },
   hero: {
     name: 'Iik Sukira',
     p: [
-      'Hi. I am a passionate Frontend Developer.',
+      'Hi. I am a passionate Frontend Web Developer.',
       'I build interactive and modern web experiences.',
     ],
   },
