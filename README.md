@@ -22,7 +22,7 @@
 ## 🌐 Live Demo
 
 Explore the live demonstration of the project:
-[my-portfolio](https://portfolio.iiksukira.vercel.app/)
+[my-portfolio](https://www.iiksukira.my.id/)
 
 ## 📝 Description
 
