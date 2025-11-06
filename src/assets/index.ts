@@ -33,6 +33,8 @@ import datavisualizationapp from './datavisualizationapp.png';
 import dimminprofile from './dimminprofile.png';
 import misyesinviteu from './misyesinviteu.png';
 import nytarticlesearch from './nytarticlesearch.png';
+import industrixtodo from './industrixtodo.png';
+import rumahsehat from './rumahsehat.png';
 
 export {
   iik,
@@ -62,6 +64,8 @@ export {
   aka,
   ppa,
   mp,
+  industrixtodo,
+  rumahsehat,
   cbgprofile,
   datavisualizationapp,
   dimminprofile,

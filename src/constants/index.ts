@@ -20,6 +20,8 @@ import {
   docker,
   ppa,
   mp,
+  industrixtodo,
+  rumahsehat,
   cbgprofile,
   dimminprofile,
   misyesinviteu,
@@ -163,6 +165,51 @@ const experiences: TExperience[] = [
   },
 ];
 const projects: TProject[] = [
+  {
+    name: 'Industrix Todo App',
+    description:
+      'A full-stack todo list web application built for the Industrix Full Stack Engineer Intern Coding Challenge. It features todo and category management, pagination, search, and a clean responsive UI using React and Ant Design.',
+    tags: [
+      {
+        name: 'reactJS',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'ant design',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'expressJS',
+        color: 'pink-text-gradient',
+      },
+      { name: 'postgresql', color: 'green-text-gradient' },
+    ],
+    image: industrixtodo,
+    sourceCodeLink: 'https://github.com/iiksukira/industrix-todo-app',
+    ViewProjectLink: 'https://industrix-todo-app.vercel.app/',
+  },
+  {
+    name: 'Rumah Sehat',
+    description:
+      'The Rumah Sehat website is a health clinic profile site developed using WordPress and exported as a statistical version using the Simply Static plugin. This project aims to display general information about the clinic`s services, doctor profiles, locations, and a contact form for appointments in a professional and user-friendly manner.',
+    tags: [
+      {
+        name: 'wordpress',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'elementor',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'rechaptcha',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: rumahsehat,
+    sourceCodeLink: 'https://github.com/iiksukira/rumah-sehat',
+    ViewProjectLink: 'https://rumah-sehat.vercel.app/',
+  },
   {
     name: 'Wedding Catalog',
     description:
